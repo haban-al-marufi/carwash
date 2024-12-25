@@ -77,8 +77,45 @@
           </div>
         
         <h3 class="h3">Data Kendaraan</h3>
-        <button class="btn1 btn-primary mb-3"><i class="bi bi-plus-circle"></i> Tambah</button>
+        <button class="btn1 btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahAdminModal"><i class="bi bi-plus-circle"></i> Tambah</button>
 
+        <div class="modal fade" id="tambahAdminModal" tabindex="-1" aria-labelledby="tambahAdminModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tambahAdminModalLabel">Tambah Kendaraan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-icon">
+                  <img src="aset/Kendaraan.svg" alt="User Icon" class="rounded-circle">
+                </div>
+                <form>
+                  <div class="mb-3">
+                    <label for="pemilik" class="form-label">Pemilik</label>
+                    <input type="text" class="form-control" id="pemilik" placeholder="Masukan nama pemilik">
+                  </div>
+                  <div class="mb-3">
+                    <label for="jeniskendaraan" class="form-label">Jenis Kendaraan</label>
+                    <input type="text"class="form-control" id="jeniskendaraan" placeholder="Masukan jenis kendaraan">
+                  </div>
+                  <div class="mb-3">
+                    <label for="merek" class="form-label">Merek</label>
+                    <input type="text" class="form-control" id="merek" placeholder="Masukan paket">
+                  </div>
+                  <div class="mb-3">
+                    <label for="plat" class="form-label">Plat nomor</label>
+                    <input type="number" class="form-control" id="plat" placeholder="Masukan nomor plat">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="table-container">
           <table class="table table-bordered">
             <thead class="table-light">

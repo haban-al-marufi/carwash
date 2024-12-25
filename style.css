@@ -137,3 +137,15 @@
         background-color:rgba(216, 216, 216, 0.0) !important;
       }
 
+      .modal-body .form-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .modal-body .form-icon img {
+        width: 80px;
+        height: 80px;
+      }
+      .modal-footer .btn {
+        width: 120px;}

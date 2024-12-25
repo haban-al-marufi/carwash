@@ -77,7 +77,41 @@
           </div>
         
         <h3 class="h3">Data Karyawan</h3>
-        <button class="btn1 btn-primary mb-3"><i class="bi bi-plus-circle"></i> Tambah</button>
+        <button class="btn1 btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahAdminModal"><i class="bi bi-plus-circle"></i> Tambah</button>
+
+        <div class="modal fade" id="tambahAdminModal" tabindex="-1" aria-labelledby="tambahAdminModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tambahAdminModalLabel">Tambah Karyawan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-icon">
+                  <img src="aset/karyawan.svg" alt="User Icon" class="rounded-circle">
+                </div>
+                <form>
+                  <div class="mb-3">
+                    <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap">
+                  </div>
+                  <div class="mb-3">
+                    <label for="shift" class="form-label">Shift</label>
+                    <input type="number" min="1" max="3" class="form-control" id="email" placeholder="Pilih shift anda">
+                  </div>
+                  <div class="mb-3">
+                    <label for="status" class="form-label">Status</label>
+                    <input type="text" class="form-control" id="status" placeholder="Masukan status anda">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="table-container">
           <table class="table table-bordered">

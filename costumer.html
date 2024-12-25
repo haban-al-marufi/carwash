@@ -77,7 +77,41 @@
           </div>
         
         <h3 class="h3">Data Customer</h3>
-        <button class="btn1 btn-primary mb-3"><i class="bi bi-plus-circle"></i> Tambah</button>
+        <button class="btn1 btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahAdminModal"><i class="bi bi-plus-circle"></i> Tambah</button>
+
+        <div class="modal fade" id="tambahAdminModal" tabindex="-1" aria-labelledby="tambahAdminModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tambahAdminModalLabel">Tambah Customer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-icon">
+                  <img src="aset/admin.svg" alt="User Icon" class="rounded-circle">
+                </div>
+                <form>
+                  <div class="mb-3">
+                    <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="telepon" class="form-label">Telephone</label>
+                    <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-control" id="tel" placeholder="Masukkan nomor anda">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="table-container">
           <table class="table table-bordered">
