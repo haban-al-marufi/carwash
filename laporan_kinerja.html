@@ -118,57 +118,57 @@ h5{
   <canvas id="myChart" width="400" height="200"></canvas>
 
   <script>
-    // Data for the chart
+    // Data untuk chart
     const data = {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Merah', 'Biru', 'Kuning', 'Hijau', 'Ungu', 'Oranye'], // Label untuk setiap bar
       datasets: [{
-        label: 'My First Dataset',
-        data: [12, 19, 3, 5, 2, 3], // Values for each bar
+        label: 'Dataset Pertama Saya',
+        data: [12, 19, 3, 5, 2, 3], // Nilai untuk setiap bar
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 205, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
+          'rgba(0, 204, 221, 1)',  // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)',  // #3A6D8C dengan opacity penuh
+          'rgba(0, 204, 221, 1)',  // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)',  // #3A6D8C dengan opacity penuh
+          'rgba(0, 204, 221, 1)',  // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)'   // #3A6D8C dengan opacity penuh
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 205, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
+          'rgba(0, 204, 221, 1)',    // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)',   // #3A6D8C dengan opacity penuh
+          'rgba(0, 204, 221, 1)',    // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)',   // #3A6D8C dengan opacity penuh
+          'rgba(0, 204, 221, 1)',    // #00CCDD dengan opacity penuh
+          'rgba(58, 109, 140, 1)'    // #3A6D8C dengan opacity penuh
         ],
         borderWidth: 1
       }]
     };
-
-    // Config for the chart
+  
+    // Konfigurasi untuk chart
     const config = {
-      type: 'bar',  // Type of chart
+      type: 'bar',  // Tipe chart
       data: data,
       options: {
         responsive: true,
         plugins: {
           legend: {
-            position: 'top',
+            position: 'top', // Posisi legenda di atas
           },
           tooltip: {
-            enabled: true
+            enabled: true // Menampilkan tooltip saat hover
           }
         },
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: true // Mulai sumbu Y dari 0
           }
         }
       }
     };
-
-    // Render chart on the canvas element
+  
+    // Render chart pada elemen canvas
     const myChart = new Chart(
-      document.getElementById('myChart'),
+      document.getElementById('myChart'), // ID canvas
       config
     );
   </script>
