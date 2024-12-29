@@ -131,7 +131,40 @@
                 <td>Pagi</td>
                 <td>Aktif</td>
                 <td>
-                  <button class="btn2 btn-success btn-sm"><i class="bi bi-pencil"><img src="aset/edit.svg" alt=""></i> Edit</button>
+                  <button class="btn2 btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editAdminModal"><i class="bi bi-pencil"><img src="aset/edit.svg" alt=""></i> Edit</button>
+                  <div class="modal fade" id="editAdminModal" tabindex="-1" aria-labelledby="editAdminModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="tambahAdminModalLabel">Edit Data Karyawan</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-icon">
+                            <img src="aset/karyawan.svg" alt="User Icon" class="rounded-circle">
+                          </div>
+                          <form>
+                            <div class="mb-3">
+                              <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                              <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="mb-3">
+                              <label for="shift" class="form-label">Shift</label>
+                              <input type="number" min="1" max="3" class="form-control" id="email" placeholder="Pilih shift anda">
+                            </div>
+                            <div class="mb-3">
+                              <label for="status" class="form-label">Status</label>
+                              <input type="text" class="form-control" id="status" placeholder="Masukan status anda">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <button class="btn3 btn-danger btn-sm"><i class="bi bi-trash"><img src="aset/hapus.svg" alt=""></i> Hapus</button>
                 </td>
               </tr>
