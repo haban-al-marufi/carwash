@@ -18,14 +18,27 @@
       position: relative;
     }
     .logo-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-    .logo-container img {
-      max-height: 60px;
-      margin-right: 10px;
-    }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .car-icon {
+          height: 120px;
+            width: 120px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            display: block;
+            width: 441px;
+            height: 128px;
+            margin: 0 auto 20px;
+        }
+
+    
     /* CSS Tombol Bulat dengan Gambar */
     .circle-btn-link {
   position: absolute;
@@ -39,8 +52,8 @@
 }
 
 .circle-btn {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: #17a2b8;
     border: none;
     border-radius: 50%;
@@ -58,10 +71,10 @@
     transform: scale(1.1);
 }
 
-/* CSS untuk gambar di dalam tombol */
+
 .circle-btn img {
-    width: 40px;          /* Ukuran gambar, sesuaikan dengan ukuran tombol */
-    height: 40px;         /* Ukuran gambar, sesuaikan dengan ukuran tombol */
+    width: 100px;          /* Ukuran gambar, sesuaikan dengan ukuran tombol */
+    height: 100px;         /* Ukuran gambar, sesuaikan dengan ukuran tombol */
     border-radius: 50%;   /* Membuat gambar berbentuk bulat */
 }
     .menu-icon {
@@ -72,11 +85,7 @@
     .menu-icon img {
       width: 30px;
     }
-    .circle-btn span {
-            color: white;       /* Mengubah warna simbol menjadi putih */
-            font-size: 40px;    /* Menyesuaikan ukuran font agar sesuai dengan ukuran tombol */
-            font-weight: bold;  /* Optional: Membuat simbol lebih tebal */
-        }
+   
   </style>
 </head>
 <body>
@@ -87,9 +96,9 @@
   
   <!-- Logo Mobil dan Tulisan -->
   <div class="logo-container">
-    <img src="aset/Car.svg" alt="Mobil">
-    <img src="aset/CarWash.svg" alt="CarWash">
-  </div>
+    <img src="aset/Car.svg" alt="Car Icon" class="car-icon">
+    <img src="aset/CarWash.svg" alt="CarWash Logo" class="logo">
+</div>
   <!-- tombol -->
   <a href="login.html" class="circle-btn-link">
     <button class="circle-btn">
